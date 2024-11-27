@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perusahaan Tanaman</title>
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css\style.css" rel="stylesheet" />
+    <style>
+        /*About Me*/
+        main .content .about-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        main .content .about-item {
+            display: flex;
+            flex: wrap;
+            justify-content: center;
+            gap: 10px;
+            width: 50%;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        main .content .about-item img {
+            height: 100px;
+            width: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /*End About Me*/
+
+
+        /* contacts */
+        main section .contacts-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            max-width: 1000px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba (0, 0, 0, 0.1);
+        }
+
+        main section .content-title {
+            /* margin-top: 50px; */
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        main section .content-title .title {
+            margin-block: 1rem;
+            color: #1A4D2E;
+        }
+
+        main section .content-title .tagline {
+            margin-block: 1rem;
+            color: #f89646;
+        }
+
+        main section .content-title .desc {
+            font-size: 16px;
+            line-height: 1.7rem;
+        }
+
+        main section .contact-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main section .contact-image img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        main section .contacts-box {
+            flex: 2;
+            padding: 20px;
+            max-width: 800px;
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+
+        main section .contacts-box button {
+            padding: 0.5rem 2.5rem;
+            width: 100%;
+            font-weight: 600;
+        }
+
+        main section .contacts-box main section .form-group {
+            margin-bottom: 20px;
+        }
+
+        main section .contacts-box label {
+            display: block;
+            margin-bottom: 5px;
+            color: #1A4D2E;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        main section .contacts-box input[type="text"],
+        main section .contacts-box input[type="email"],
+        main section .contacts-box textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: rgba(226, 232, 240, 0.5);
+            border-radius: 5px;
+        }
+
+        main section .contacts-box textarea {
+            resize: vertical;
+        }
+
+        main section .contacts-box a {
+            padding: 10px 30px;
+            background-color: #659287;
+            color: #ffffff;
+            border-radius: 0;
+            border: 1px solid #659287;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        main section .contacts-box a:hover {
+            background-color: transparent;
+            color: #659287;
+        }
+
+        /* end contacts */
+    </style>
+</head>
+
+<body>
+    <!-- Start Header Section-->
+    <header class="navbar-container">
+        <div class="nama-brand">
+            <span>
+                <img src="img/logo.png" alt="">
+                Pertanian
+            </span>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="#menu">Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#info-tanaman">Info Tanaman</a></li>
+                        <li><a href="#budidaya">Budidaya</a></li>
+                        <li><a href="#harga-pasar">Harga Pasar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contacts">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="nama-brand">
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+        <!--Start Welcome Content-->
+        <section class="content-welcome" id="welcome">
+            <div class="welcome">
+                <div class="detail-box">
+                    <h1 class="title">Selamat Datang <br>
+                        di Perusahaan Tanaman</h1>
+                    <p>
+                        Temukan berbagai informasi mengenai tanaman, budidaya dan harga di sini.
+                    </p>
+                    <div class="btn-box">
+                        <a href="#contacts" class="btn1">
+                            Contact Us
+                        </a>
+                        <a href="#about" class="btn2">
+                            About Us
+                        </a>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img\pertanian-welcome.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End Welcome Content-->
+
+        <!--Start Info Tanaman-->
+        <section class="content" id="info-tanaman">
+            <div class="info-tanaman">
+                <div class="heading_container">
+                    <h2>
+                        Info Tanaman
+                    </h2>
+                    <p>
+                        Di sini Anda dapat menemukan informasi lengkap mengenai berbagai jenis tanaman yang kami
+                        sediakan.
+                    </p>
+                </div>
+                <div class="info-container">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="img\info-straw.webp" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Stroberi
+                            </h5>
+                            <p>
+                                Stroberi adalah anggota keluarga mawar, dengan varietas yang paling
+                                umum yakni hibrida dari buah stroberi liar asal Virginia, asli Amerika Utara
+                                dan varietas Chili.
+                            </p>
+                            <a href="">
+                                Baca Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="img\info-sawi-pakcoy.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Sawi Pakcoy
+                            </h5>
+                            <p>
+                                Pakcoy atau bok choy (Brassica rapa Kelompok Chinensis suku sawi-sawian atau
+                                Brassicaceae) merupakan jenis sayuran yang populer.
+                            </p>
+                            <a href="">
+                                Baca Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="img\info-bawang-prei.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Bawang Prei
+                            </h5>
+                            <p>
+                                Bawang prei merupakan salah satu jenis sayuran yang sering dimanfaatkan sebagai
+                                penyedap untuk meningkatkan cita rasa masakan.
+                            </p>
+                            <a href="">
+                                Baca Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Info Tanaman-->
+
+        <!-- Start Budidaya -->
+        <section class="content" id="budidaya">
+            <div class="budidaya">
+                <div class="img-box">
+                    <img src="img\budidaya.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            Budidaya
+                        </h2>
+                    </div>
+                    <p>
+                        Pelajari cara budidaya tanaman secara efektif <br>
+                        dan efesien dengan panduan lengkap kami
+                    </p>
+                    <a href="">
+                        Baca Selengkapnya
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Budidaya -->
+
+        <!-- Start Harga Pasar -->
+        <section class="content" id="harga-pasar">
+            <div class="harga-pasar">
+                <div class="heading_container">
+                    <h2>
+                        Harga Pasar
+                    </h2>
+                    <p>
+                        Di sini Anda dapat menemukan informasi lengkap mengenai berbagai jenis tanaman yang kami
+                        sediakan.
+                    </p>
+                </div>
+                <div class="harga-container">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="img\harga-janda-bolong.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Monstera Adansoni
+                            </h5>
+                            <div class="d-flex justify-content-between price_box">
+                                <div class="price_heading">
+                                    <span>Rp</span> 10.000
+                                </div>
+                                <div>
+                                    <a href="#">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="img\harga-lidah-mertua.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Lidah Mertua
+                            </h5>
+                            <div class="d-flex justify-content-between price_box">
+                                <div class="price_heading">
+                                    <span>Rp</span> 10.000
+                                </div>
+                                <div>
+                                    <a href="#">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="img\harga-kaktus.webp" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Kaktus Hias
+                            </h5>
+                            <div class="d-flex justify-content-between price_box">
+                                <div class="price_heading">
+                                    <span>Rp</span> 10.000
+                                </div>
+                                <div>
+                                    <a href="#">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Harga Pasar-->
+
+
+        <section class="content" id="about">
+            <article class="about">
+                <div class="content-title">
+                    <h3 class="title">Tentang Kami!</h3>
+                    <h4 class="tagline">Sebagai pecinta tanaman, perusahaan kami fokus pada perawatan dan pengembangan
+                        tanaman.</h4>
+                    <p class="desc">
+                        Kami telah mempelajari berbagai teknik pertanian, dari penanaman hingga perawatan tanaman. Saat
+                        ini, fokus kami adalah memperdalam pengetahuan tentang tanaman hias dan tanaman pangan, serta
+                        terus mencari cara inovatif untuk mendukung pertumbuhan tanaman yang lebih baik. Kami juga
+                        bekerjasama dengan perusahaan-perusahaan ternama untuk mewujudkan hal ini.
+                    </p>
+                </div>
+            </article>
+            <div class="about-container">
+                <div class="about-item">
+                    <img src="img/logo-AAL-web.png" alt="AAL">
+                    <img src="img/Bulog_2024.svg.png" alt="Bulog">
+                    <img src="img/pilog.png" alt="PILOG">
+                    <img src="img/Petrokimia_Gresik_logo.svg.png" alt="Petrokimia_Gresik_logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="content-title">
+                <h3 class="title">Hubungi Kami!</h3>
+                <h4 class="tagline">Jangan ragu untuk memperkenalkan diri, sampaikan salam!</h4>
+                <p class="desc">Siap untuk memajukan pertanian? Saya senang mendengar ide dan proyek Anda. Jangan ragu
+                    untuk menghubungi saya!.</p>
+            </div>
+            <div class="contacts-container">
+                <div class="contacts-box">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <a href="#">Send Message</a>
+                    </form>
+                </div>
+                <div class="contact-image">
+                    <img src="img\contact.png" alt="Contact Me">
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Start Footer -->
+    <footer class="footer_section">
+        <div class="container">
+            <p>
+                &copy;
+                <script>document.write(new Date().getFullYear());</script> Perusahaan Tanaman.
+                <a href="#"> ~ Erfia Nadia Safari </a>
+
+        </div>
+    </footer>
+    <!--End Footer -->
+</body>
+
+</html>
